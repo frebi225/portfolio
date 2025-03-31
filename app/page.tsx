@@ -51,7 +51,7 @@ export default function Home() {
             <div className="md:w-1/2 flex justify-center">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20">
                 <Image
-                  src="/moi.png"
+                  src="/public/moi.png"
                   alt="Portrait"
                   fill
                   className="object-cover"
@@ -160,7 +160,7 @@ export default function Home() {
             <ProjectCard
               title="Sikabôlô 💰"
               description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
-              image="/placeholder.svg?height=200&width=300"
+              image="/boum.jpeg?height=200&width=300"
               tags={["Next.js", "API REST", "SQL"]}
               fullDescription="Sikabôlô est une solution digitale innovante de scoring de crédit développée lors d'un hackathon organisé par Digifemmes et Ecobank. Cette application permet d'évaluer la solvabilité des demandeurs de crédit en analysant diverses données financières et comportementales. J'ai utilisé Next.js pour le frontend et le backend, avec une API REST pour communiquer avec une base de données SQL."
               githubUrl="https://github.com/audreyfrebi/sikabolo"
