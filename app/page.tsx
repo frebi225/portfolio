@@ -260,7 +260,7 @@ export default function Home() {
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            <span className="text-orange-500">—</span> Restons Connectés
+            <span className="text-orange-500"></span> Restons Connectés
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
