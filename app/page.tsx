@@ -78,10 +78,11 @@ export default function Home() {
             <span className="text-orange-500"></span> Mon Parcours et Compétences
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-blue-900">Mon Parcours</h3>
-              <p className="text-gray-700 leading-relaxed">
+          {/* Parcours */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-semibold text-blue-900 mb-6">Mon Parcours</h3>
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <p className="text-gray-700 leading-relaxed mb-4">
                 Après une formation intensive en développement web, j'ai travaillé sur divers projets allant des
                 applications web aux systèmes backend complexes. Ma passion pour l'apprentissage continu m'a permis de
                 maîtriser plusieurs langages et frameworks.
@@ -91,57 +92,70 @@ export default function Home() {
                 résolution de problèmes, et la collaboration étroite avec les équipes et clients.
               </p>
             </div>
+          </div>
 
-            <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-blue-900">Mes Compétences</h3>
+          {/* Compétences */}
+          <div>
+            <h3 className="text-2xl font-semibold text-blue-900 mb-6">Mes Compétences</h3>
 
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">Go</span>
-                    <span className="text-orange-500">55%</span>
+            <div className="space-y-8">
+              {/* Compétences Techniques */}
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h4 className="font-semibold text-blue-900 mb-4">Compétences Techniques</h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <SkillBar name="Programmation élémentaire" value={75} />
+                    <SkillBar name="Administration système" value={80} />
+                    <SkillBar name="Algorithmes élémentaires" value={55} />
+                    <SkillBar name="Front-end" value={55} />
                   </div>
-                  <Progress value={55} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
+                  <div className="space-y-4">
+                    <SkillBar name="Back-end" value={55} />
+                    <SkillBar name="TCP/IP" value={30} />
+                    <SkillBar name="Statistiques" value={25} />
+                    <SkillBar name="Programmation de jeux" value={23} />
+                  </div>
                 </div>
+              </div>
 
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">JavaScript</span>
-                    <span className="text-orange-500">55%</span>
+              {/* Technologies */}
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h4 className="font-semibold text-blue-900 mb-4">Technologies</h4>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="space-y-4">
+                    <SkillBar name="Docker" value={70} />
+                    <SkillBar name="Go" value={55} />
+                    <SkillBar name="JavaScript" value={55} />
                   </div>
-                  <Progress value={55} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
+                  <div className="space-y-4">
+                    <SkillBar name="HTML" value={55} />
+                    <SkillBar name="Git" value={50} />
+                    <SkillBar name="Rust" value={45} />
+                  </div>
+                  <div className="space-y-4">
+                    <SkillBar name="Unix" value={45} />
+                    <SkillBar name="CSS" value={40} />
+                    <SkillBar name="Electron" value={40} />
+                  </div>
                 </div>
+              </div>
 
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">SQL</span>
-                    <span className="text-orange-500">30%</span>
-                  </div>
-                  <Progress value={30} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">PHP</span>
-                    <span className="text-orange-500">35%</span>
-                  </div>
-                  <Progress value={35} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">Docker</span>
-                    <span className="text-orange-500">70%</span>
-                  </div>
-                  <Progress value={70} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
-                </div>
-
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="font-medium text-gray-700">Git</span>
-                    <span className="text-orange-500">50%</span>
-                  </div>
-                  <Progress value={50} className="h-2 bg-gray-200" indicatorClassName="bg-orange-500" />
+              {/* Autres Technologies */}
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h4 className="font-semibold text-blue-900 mb-4">Autres Technologies</h4>
+                <div className="flex flex-wrap gap-3">
+                  <TechBadge name="Shell" value={35} />
+                  <TechBadge name="PHP" value={35} />
+                  <TechBadge name="SQL" value={30} />
+                  <TechBadge name="C" value={30} />
+                  <TechBadge name="Python" value={30} />
+                  <TechBadge name="Laravel" value={30} />
+                  <TechBadge name="Django" value={30} />
+                  <TechBadge name="Ruby" value={25} />
+                  <TechBadge name="Ruby on Rails" value={25} />
+                  <TechBadge name="C++" value={20} />
+                  <TechBadge name="GraphQL" value={20} />
+                  <TechBadge name="Intelligence Artificielle" value={15} />
                 </div>
               </div>
             </div>
