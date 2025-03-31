@@ -4,13 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Code, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Progress } from "@/components/ui/progress"
 import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
-import SkillBar from "@/components/SkillBar" // Vérifie le bon chemin
-import TechBadge from "@/components/TechBadge";
+import { SkillBar } from "@/components/skill-bar"
+import { TechBadge } from "@/components/tech-badge"
 
 
 export default function Home() {
