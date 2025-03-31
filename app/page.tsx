@@ -180,7 +180,7 @@ Toujours en quête d’innovation, je suis ouverte aux nouvelles opportunités e
               title="Sikabôlô 💰"
               description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
               image="/bim.png?height=200&width=300"
-              tags={["Next.js", "API REST", "SQL"]}
+              tags={["Next.js", "API REST", "SQLite"]}
               fullDescription="Sikabôlô est une solution digitale innovante de scoring de crédit développée lors d'un hackathon organisé par Digifemmes et Ecobank. C'est une application mobile utilisant un modèle de scoring basé sur des données alternatives pour faciliter l’accès au crédit et l’intégration bancaire des femmes entrepreneures. Conçue pour répondre aux besoins des commerçantes informelles ivoiriennes souvent exclues du système bancaire faute de garanties et de documents financiers, elle permet aux institutions de mieux évaluer leur solvabilité et de leur offrir des solutions de financement adaptées."
               githubUrl="https://github.com/audreyfrebi/sikabolo"
               liveUrl="https://sikabolo.vercel.app"
