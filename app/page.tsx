@@ -10,7 +10,7 @@ import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
 import { TechBadge } from "@/components/TechBadge"
-import SkillBar from "@/components/ui/SkillBar"; // Vérifie le bon chemin
+import SkillBar from "@/components/SkillBar" // Vérifie le bon chemin
 
 
 export default function Home() {
