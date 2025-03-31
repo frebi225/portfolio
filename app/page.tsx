@@ -24,8 +24,9 @@ export default function Home() {
                 Salut, moi c'est <span className="text-orange-500">AUDREY FREBI</span> 👋
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
-                Développeuse Full Stack Junior passionnée par le code propre, les solutions performantes et l'innovation
-                digitale.
+              Passionnée par le développement web et la gestion de projets numériques, je combine des compétences techniques et organisationnelles pour concevoir des solutions digitales performantes.
+
+Titulaire d’une formation en développement full-stack, j’ai travaillé sur divers projets alliant PHP, JavaScript, Go, et des bases de données SQL/NoSQL. Mon expertise inclut la conception d’interfaces ergonomiques avec Tailwind CSS, la gestion de contenus via des CMS et l’optimisation SEO pour améliorer la visibilité en ligne.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button
@@ -84,13 +85,16 @@ export default function Home() {
             <h3 className="text-2xl font-semibold text-blue-900 mb-6">Mon Parcours</h3>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 leading-relaxed mb-4">
-                Après une formation intensive en développement web, j'ai travaillé sur divers projets allant des
-                applications web aux systèmes backend complexes. Ma passion pour l'apprentissage continu m'a permis de
-                maîtriser plusieurs langages et frameworks.
+              Issue d’une formation en microbiologie, j’ai progressivement élargi mes compétences vers le développement web et la gestion de projets digitaux. Passionnée par la technologie et l’innovation, j’ai suivi plusieurs formations intensives qui m’ont permis d’acquérir une expertise en développement full-stack, en gestion agile et en production de contenus numériques.
+
+À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j’ai pu approfondir mes connaissances en back-end, en bases de données et en intégration d’interfaces modernes. Je maîtrise des technologies comme PHP, Next.js, MongoDB et TailwindCSS, et j’adopte des méthodologies agiles pour assurer le bon déroulement des projets.
+
+Aujourd’hui, je combine mon esprit analytique issu des sciences avec mes compétences techniques pour concevoir des solutions numériques efficaces et adaptées aux besoins des utilisateurs. Mon objectif est de continuer à apprendre, innover et contribuer à des projets à fort impact.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Mon approche du développement repose sur trois piliers : l'efficacité du code, la créativité dans la
-                résolution de problèmes, et la collaboration étroite avec les équipes et clients.
+              Mon approche est axée sur la résolution de problèmes et l’amélioration continue des solutions que je développe. J’aime collaborer avec des équipes pluridisciplinaires et utiliser des méthodes Agile/Scrum pour gérer efficacement les projets.
+
+Toujours en quête d’innovation, je suis ouverte aux nouvelles opportunités et aux défis qui me permettront d’élargir mon champ de compétences dans le digital.
               </p>
             </div>
           </div>
@@ -177,7 +181,7 @@ export default function Home() {
               description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
               image="/placeholder.svg?height=200&width=300"
               tags={["Next.js", "API REST", "SQL"]}
-              fullDescription="Sikabôlô est une solution digitale innovante de scoring de crédit développée lors d'un hackathon organisé par Digifemmes et Ecobank. Cette application permet d'évaluer la solvabilité des demandeurs de crédit en analysant diverses données financières et comportementales. J'ai utilisé Next.js pour le frontend et le backend, avec une API REST pour communiquer avec une base de données SQL."
+              fullDescription="Sikabôlô est une solution digitale innovante de scoring de crédit développée lors d'un hackathon organisé par Digifemmes et Ecobank. C'est une application mobile utilisant un modèle de scoring basé sur des données alternatives pour faciliter l’accès au crédit et l’intégration bancaire des femmes entrepreneures. Conçue pour répondre aux besoins des commerçantes informelles ivoiriennes souvent exclues du système bancaire faute de garanties et de documents financiers, elle permet aux institutions de mieux évaluer leur solvabilité et de leur offrir des solutions de financement adaptées."
               githubUrl="https://github.com/audreyfrebi/sikabolo"
               liveUrl="https://sikabolo.vercel.app"
             />
@@ -196,7 +200,7 @@ export default function Home() {
               description="Site internet e-commerce développé avec PHP et TailwindCSS."
               image="/placeholder.svg?height=200&width=300"
               tags={["PHP", "SQL", "TailwindCSS"]}
-              fullDescription="Golden Instinct est un site e-commerce complet développé avec PHP et stylisé avec TailwindCSS. Le site comprend un catalogue de produits, un système de panier, une gestion des utilisateurs et un processus de paiement sécurisé. J'ai également implémenté une base de données SQL pour stocker les informations des produits, des utilisateurs et des commandes. L'interface utilisateur est responsive et optimisée pour tous les appareils."
+              fullDescription="Golden Instinct est un site complet développé avec PHP et stylisé avec TailwindCSS. J’ai principalement géré le back-end et la base de données du site web de Golden Instinct, une entreprise multiservices. En utilisant PHP pour la logique serveur et MongoDB pour la gestion des données, j’ai développé une architecture robuste et optimisée. Mon travail a inclus la mise en place d’une API sécurisée, la gestion des utilisateurs et des transactions, ainsi que l’optimisation des requêtes pour assurer des performances élevées. Ce projet m’a permis de renforcer mes compétences en développement back-end, gestion de bases de données NoSQL et sécurisation des applications web."
               githubUrl="https://github.com/audreyfrebi/golden-instinct"
               liveUrl="https://golden-instinct.com"
             />
@@ -221,20 +225,20 @@ export default function Home() {
             />
 
             <ProjectCard
-              title="ASCII Art Converter 🎨"
+              title="ASCII Art 🎨"
               description="Outil CLI convertissant du texte en ASCII art avec plusieurs styles."
               image="/placeholder.svg?height=200&width=300"
               tags={["Go", "Shell"]}
-              fullDescription="ASCII Art Converter est un outil en ligne de commande qui permet de convertir du texte en art ASCII avec différents styles et polices. L'outil prend en charge plusieurs options de personnalisation comme la taille, l'alignement et les couleurs. Développé entièrement en Go, cet outil peut être utilisé dans des scripts shell ou directement dans le terminal."
+              fullDescription="ASCII Art est un outil en ligne de commande qui permet de convertir du texte en art ASCII avec différents styles et polices. L'outil prend en charge plusieurs options de personnalisation comme la taille, l'alignement et les couleurs. Développé entièrement en Go, cet outil peut être utilisé dans des scripts shell ou directement dans le terminal."
               githubUrl="https://github.com/audreyfrebi/ascii-art"
             />
 
             <ProjectCard
-              title="Jeu JavaScript 🎮"
+              title="Make Your Game 🎮"
               description="Jeu solo optimisé 60 FPS, avec gestion du score et niveaux progressifs."
               image="/placeholder.svg?height=200&width=300"
               tags={["JavaScript", "DOM Manipulation"]}
-              fullDescription="Ce jeu JavaScript est un jeu d'arcade solo optimisé pour fonctionner à 60 FPS. Il comprend une gestion de score, plusieurs niveaux de difficulté progressive et des effets sonores. J'ai développé ce jeu en utilisant uniquement JavaScript vanilla et la manipulation du DOM pour créer une expérience de jeu fluide et réactive sans dépendances externes."
+              fullDescription="Brick Breaker est un jeu d'arcade en solo développé en JavaScript vanilla, optimisé pour fonctionner à 60 FPS. Le jeu comprend une gestion de score, plusieurs niveaux de difficulté croissante et des effets sonores pour enrichir l'expérience utilisateur. En utilisant exclusivement JavaScript et la manipulation du DOM, sans aucune dépendance externe, une expérience de jeu fluide et réactive a été créée, mettant en avant des compétences en programmation JavaScript, en logique de jeu et en gestion des interactions utilisateur."
               githubUrl="https://github.com/audreyfrebi/js-game"
               liveUrl="https://game.audreyfrebi.com"
             />
@@ -258,7 +262,7 @@ export default function Home() {
 
             <ServiceCard
               title="Optimisation de Code"
-              description="Analyse et amélioration des performances d'une application existante. Debugging, refactoring et optimisation algorithmique."
+              description="Analyse et amélioration des performances d'une application existante."
               icon={<Zap className="h-10 w-10 text-orange-500" />}
             />
 
@@ -275,7 +279,7 @@ export default function Home() {
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            Contact <span className="text-orange-500">—</span> Restons Connectés
+            <span className="text-orange-500"></span> Restons Connectés
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -288,7 +292,7 @@ export default function Home() {
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4">
                   <Mail className="h-5 w-5 text-orange-500" />
-                  <span className="text-gray-700">contact@audreyfrebi.com</span>
+                  <span className="text-gray-700">audreyfrebi900@gmail.com</span>
                 </div>
 
                 <div className="flex gap-4">
@@ -298,7 +302,7 @@ export default function Home() {
                     className="text-gray-700 hover:text-orange-500 transition-colors"
                   >
                     <Github className="h-6 w-6" />
-                    <span className="sr-only">GitHub</span>
+                    <span className="sr-only">https://github.com/frebi225</span>
                   </Link>
 
                   <Link
@@ -307,7 +311,7 @@ export default function Home() {
                     className="text-gray-700 hover:text-orange-500 transition-colors"
                   >
                     <Linkedin className="h-6 w-6" />
-                    <span className="sr-only">LinkedIn</span>
+                    <span className="sr-only">https://www.linkedin.com/in/audrey-komenan</span>
                   </Link>
 
                   <Link
@@ -330,7 +334,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 bg-gray-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} AUDREY FREBI - Développeuse Full Stack Junior. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} AUDREY FREBI - Développeuse Junior. Tous droits réservés.</p>
         </div>
       </footer>
     </main>
