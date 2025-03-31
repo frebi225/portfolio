@@ -11,7 +11,6 @@ export const metadata: Metadata = {
   title: "AUDREY FREBI - Développeuse Full Stack Junior",
   description:
     "Portfolio d'AUDREY FREBI, développeuse Full Stack Junior passionnée par le code propre et l'innovation digitale",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -31,6 +30,3 @@ export default function RootLayout({
   )
 }
 
-
-
-import './globals.css'

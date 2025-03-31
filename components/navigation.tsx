@@ -4,21 +4,6 @@ import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-import Link from "next/link";
-
-
-export default function DownloadCV() {
-  return (
-      <div className="flex justify-center items-center min-h-screen">
-        <a
-         href="/cv.pdf"
-          download="cv.pdf"
-              className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-                >
-               Télécharger mon CV
-        </a>
-       </div>);
-}
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
