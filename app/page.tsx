@@ -9,8 +9,8 @@ import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
-import { TechBadge } from "@/components/TechBadge"
 import SkillBar from "@/components/SkillBar" // Vérifie le bon chemin
+import TechBadge from "@/components/TechBadge";
 
 
 export default function Home() {
