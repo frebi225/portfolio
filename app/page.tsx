@@ -206,7 +206,7 @@ export default function Home() {
             />
 
             <ProjectCard
-              title="ASCII Art Converter 🎨"
+              title="ASCII Art 🎨"
               description="Outil CLI convertissant du texte en ASCII art avec plusieurs styles."
               image="/placeholder.svg?height=200&width=300"
               tags={["Go", "Shell"]}
@@ -215,7 +215,7 @@ export default function Home() {
             />
 
             <ProjectCard
-              title="Jeu JavaScript 🎮"
+              title="Make Your Game 🎮"
               description="Jeu solo optimisé 60 FPS, avec gestion du score et niveaux progressifs."
               image="/placeholder.svg?height=200&width=300"
               tags={["JavaScript", "DOM Manipulation"]}
@@ -231,7 +231,7 @@ export default function Home() {
       <section id="services" className="py-20 bg-blue-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-            Services <span className="text-orange-500">—</span> Ce que je propose en Freelance
+            <span className="text-orange-500"></span> Ce que je propose en Freelance
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -260,7 +260,7 @@ export default function Home() {
       <section id="contact" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            Contact <span className="text-orange-500">—</span> Restons Connectés
+            <span className="text-orange-500">—</span> Restons Connectés
           </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -273,7 +273,7 @@ export default function Home() {
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4">
                   <Mail className="h-5 w-5 text-orange-500" />
-                  <span className="text-gray-700">contact@audreyfrebi.com</span>
+                  <span className="text-gray-700">audreyfrebi900@gmail.com</span>
                 </div>
 
                 <div className="flex gap-4">
@@ -283,7 +283,7 @@ export default function Home() {
                     className="text-gray-700 hover:text-orange-500 transition-colors"
                   >
                     <Github className="h-6 w-6" />
-                    <span className="sr-only">GitHub</span>
+                    <span className="sr-only">https://github.com/frebi225</span>
                   </Link>
 
                   <Link
@@ -292,7 +292,7 @@ export default function Home() {
                     className="text-gray-700 hover:text-orange-500 transition-colors"
                   >
                     <Linkedin className="h-6 w-6" />
-                    <span className="sr-only">LinkedIn</span>
+                    <span className="sr-only">https://www.linkedin.com/in/audrey-komenan</span>
                   </Link>
 
                   <Link
