@@ -77,7 +77,7 @@ Titulaire d’une formation en développement full-stack, j’ai travaillé sur 
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            À Propos <span className="text-orange-500">—</span> Mon Parcours et Compétences
+            <span className="text-orange-500">Mon Parcours et mes Compétences</span> 
           </h2>
 
           {/* Parcours */}
@@ -172,7 +172,7 @@ Toujours en quête d’innovation, je suis ouverte aux nouvelles opportunités e
       <section id="projects" className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            Projets <span className="text-orange-500">—</span> Mes Réalisations Clés
+             <span className="text-orange-500">Mes Réalisations Clés</span> 
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -250,7 +250,7 @@ Toujours en quête d’innovation, je suis ouverte aux nouvelles opportunités e
       <section id="services" className="py-20 bg-blue-900">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
-            Services <span className="text-orange-500">—</span> Ce que je propose en Freelance
+             <span className="text-orange-500">Ce que je propose en Freelance</span> 
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
