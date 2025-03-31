@@ -76,7 +76,7 @@ Titulaire d’une formation en développement full-stack, j’ai travaillé sur 
       <section id="about" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-blue-900">
-            <span className="text-orange-500"></span> Mon Parcours et Compétences
+            <span className="text-orange-500"></span> Mon Parcours et mes Compétences
           </h2>
 
           {/* Parcours */}
