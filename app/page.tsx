@@ -174,7 +174,7 @@ export default function Home() {
             <ProjectCard
               title="Sikabôlô 💰"
               description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
-              image="/boum.jpeg?height=200&width=300"
+              image="/bim.jpeg?height=200&width=300"
               tags={["Next.js", "API REST", "SQL"]}
               fullDescription="Sikabôlô est une solution digitale innovante de scoring de crédit développée lors d'un hackathon organisé par Digifemmes et Ecobank. C'est une application mobile utilisant un modèle de scoring basé sur des données alternatives pour faciliter l’accès au crédit et l’intégration bancaire des femmes entrepreneures. Conçue pour répondre aux besoins des commerçantes informelles ivoiriennes souvent exclues du système bancaire faute de garanties et de documents financiers, elle permet aux institutions de mieux évaluer leur solvabilité et de leur offrir des solutions de financement adaptées."
               githubUrl="https://github.com/audreyfrebi/sikabolo"
@@ -184,7 +184,7 @@ export default function Home() {
             <ProjectCard
               title="Jawondi 🎨"
               description="Conception d'une maquette Figma pour une plateforme digitale."
-              image="/placeholder.svg?height=200&width=300"
+              image="/boum.svg?height=200&width=300"
               tags={["UI/UX Design", "Figma"]}
               fullDescription="Jawondi est un projet de conception UI/UX pour une plateforme digitale. J'ai créé l'ensemble des maquettes sur Figma, en mettant l'accent sur l'expérience utilisateur et l'esthétique moderne. Le projet comprend des wireframes, des prototypes interactifs et une documentation complète du design system. Cette maquette a ensuite été utilisée comme référence pour le développement de la plateforme."
               liveUrl="https://www.figma.com/file/jawondi-project"
