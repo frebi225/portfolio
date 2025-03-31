@@ -9,6 +9,8 @@ import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
 import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
+import SkillBar from "@/components/SkillBar"; // Vérifie le bon chemin
+
 
 export default function Home() {
   return (
@@ -84,9 +86,11 @@ Titulaire d’une formation en développement full-stack, j’ai travaillé sur 
             <h3 className="text-2xl font-semibold text-blue-900 mb-6">Mon Parcours</h3>
             <div className="bg-gray-50 p-6 rounded-lg">
               <p className="text-gray-700 leading-relaxed mb-4">
-                Après une formation intensive en développement web, j'ai travaillé sur divers projets allant des
-                applications web aux systèmes backend complexes. Ma passion pour l'apprentissage continu m'a permis de
-                maîtriser plusieurs langages et frameworks.
+              Issue d’une formation en microbiologie, j’ai progressivement élargi mes compétences vers le développement web et la gestion de projets digitaux. Passionnée par la technologie et l’innovation, j’ai suivi plusieurs formations intensives qui m’ont permis d’acquérir une expertise en développement full-stack, en gestion agile et en production de contenus numériques.
+
+À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j’ai pu approfondir mes connaissances en back-end, en bases de données et en intégration d’interfaces modernes. Je maîtrise des technologies comme PHP, Next.js, MongoDB et TailwindCSS, et j’adopte des méthodologies agiles pour assurer le bon déroulement des projets.
+
+Aujourd’hui, je combine mon esprit analytique issu des sciences avec mes compétences techniques pour concevoir des solutions numériques efficaces et adaptées aux besoins des utilisateurs. Mon objectif est de continuer à apprendre, innover et contribuer à des projets à fort impact.
               </p>
               <p className="text-gray-700 leading-relaxed">
               Mon approche est axée sur la résolution de problèmes et l’amélioration continue des solutions que je développe. J’aime collaborer avec des équipes pluridisciplinaires et utiliser des méthodes Agile/Scrum pour gérer efficacement les projets.
