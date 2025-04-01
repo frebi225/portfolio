@@ -207,7 +207,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="animate-fadeIn animate-delay-200">
+            <div className="h-full">
               <ProjectCard
                 title="Jawondi 🎨"
                 description="Conception d'une maquette Figma pour une plateforme digitale."
@@ -230,7 +230,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="animate-fadeIn animate-delay-400">
+            <div className="h-full">
               <ProjectCard
                 title="Groupie Trackers 🎵"
                 description="Web app affichant des données d'artistes via une API."
@@ -242,7 +242,31 @@ export default function Home() {
               />
             </div>
 
-            <div className="animate-fadeIn animate-delay-500">
+            <div className="h-full">
+              <ProjectCard
+                title="Allo Depann+ 🚗"
+                description="Plateforme innovante qui connecte en temps réel les automobilistes en difficulté, les dépanneurs et les garages à Abidjan."
+                image="/placeholder.svg?height=200&width=300"
+                tags={["Mobile", "Géolocalisation", "Temps réel"]}
+                fullDescription="🚗 Allo Depann+ est une plateforme innovante qui connecte en temps réel les automobilistes en panne avec des dépanneurs et garages professionnels de proximité, offrant une assistance rapide, géolocalisée et fiable à Abidjan. 🚗⚡"
+                githubUrl="https://github.com/audreyfrebi/allodepann"
+                liveUrl="https://allodepann.com"
+              />
+            </div>
+
+            <div className="h-full">
+              <ProjectCard
+                title="Make Your Game 🎮"
+                description="Jeu vidéo développé en JavaScript avec Canvas, proposant une expérience de jeu immersive et interactive."
+                image="/placeholder.svg?height=200&width=300"
+                tags={["JavaScript", "Canvas", "Game Dev"]}
+                fullDescription="Make Your Game est un projet de développement de jeu vidéo réalisé en JavaScript avec l'API Canvas. Ce jeu propose une expérience interactive avec des graphismes soignés, des animations fluides et une mécanique de jeu engageante. J'ai implémenté un système de collision, une gestion des scores et différents niveaux de difficulté pour offrir une expérience complète aux joueurs."
+                githubUrl="https://github.com/audreyfrebi/make-your-game"
+                liveUrl="https://make-your-game.audreyfrebi.com"
+              />
+            </div>
+
+            <div className="h-full">
               <ProjectCard
                 title="Forum en temps réel 💬"
                 description="Plateforme interactive avec WebSockets pour des discussions instantanées."
@@ -253,7 +277,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="animate-fadeIn animate-delay-600">
+            <div className="h-full">
               <ProjectCard
                 title="ASCII Art 🎨"
                 description="Outil CLI convertissant du texte en ASCII art avec plusieurs styles."
