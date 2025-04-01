@@ -23,14 +23,14 @@ export function ServiceCard({ title, description, icon }: ServiceCardProps) {
   return (
     <Card
       className={cn(
-        "bg-blue-800 border-none transition-all duration-300",
-        isHovered && "bg-blue-700 transform -translate-y-1",
+        "bg-blue-800/80 backdrop-blur-sm border-none transition-all duration-300 h-full",
+        isHovered && "bg-blue-700 transform -translate-y-2",
       )}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <CardContent className="p-6 pt-8">
-        <div className="mb-4">{icon}</div>
+        <div className="mb-4 bg-blue-700/50 p-3 rounded-full inline-block">{icon}</div>
         <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
         <p className="text-blue-100 text-sm">{description}</p>
       </CardContent>
@@ -38,7 +38,7 @@ export function ServiceCard({ title, description, icon }: ServiceCardProps) {
       <CardFooter className="p-6 pt-0">
         <Button
           variant="outline"
-          className="mt-4 border-white/20 bg-white text-blue-900 hover:bg-orange-500 hover:text-white hover:border-transparent w-full font-medium"
+          className="mt-4 border-white/20 bg-white text-blue-900 hover:bg-orange-500 hover:text-white hover:border-transparent w-full font-medium shadow-lg"
           onClick={handleContact}
         >
           Me contacter
