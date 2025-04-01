@@ -40,7 +40,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-blue-900 hover:text-white transition-all"
+                  className="border-white text-black hover:bg-blue-900 hover:text-white transition-all"
                   onClick={() => {
                     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
                   }}
