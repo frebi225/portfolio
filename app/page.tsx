@@ -47,14 +47,6 @@ export default function Home() {
                 >
                   Me contacter <Mail className="ml-2 h-4 w-4" />
                 </Button>
-                <Button
-                  size="lg"
-                  variant="secondary"
-                  className="bg-white text-blue-900 hover:bg-orange-500 hover:text-white transition-all"
-                  onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
-                >
-                  Télécharger CV <Download className="ml-2 h-4 w-4" />
-                </Button>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">

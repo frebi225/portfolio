@@ -49,7 +49,7 @@ export function Navigation() {
             onClick={() => scrollToSection("home")}
             className={cn("text-2xl font-bold transition-colors", isScrolled ? "text-blue-900" : "text-white")}
           >
-            A<span className="text-orange-500">.</span>FREBI
+            AUDREY<span className="text-orange-500">.</span>
           </button>
 
           {/* Desktop Navigation */}
@@ -66,7 +66,12 @@ export function Navigation() {
                 {link.name}
               </button>
             ))}
-            
+            <Button
+              className="bg-orange-500 hover:bg-orange-600 text-white"
+              onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
+            >
+              Télécharger CV
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -94,7 +99,12 @@ export function Navigation() {
                   {link.name}
                 </button>
               ))}
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">Télécharger CV</Button>
+              <Button
+                className="bg-orange-500 hover:bg-orange-600 text-white w-full"
+                onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
+              >
+                Télécharger CV
+              </Button>
             </nav>
           </div>
         </div>
