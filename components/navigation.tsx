@@ -49,7 +49,7 @@ export function Navigation() {
             onClick={() => scrollToSection("home")}
             className={cn("text-2xl font-bold transition-colors", isScrolled ? "text-blue-900" : "text-white")}
           >
-            AUDREY<span className="text-orange-500">.</span>
+            A<span className="text-orange-500">.</span>FREBI
           </button>
 
           {/* Desktop Navigation */}
