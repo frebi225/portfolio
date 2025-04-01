@@ -1,7 +1,3 @@
-"use client"
-
-import { motion } from "framer-motion"
-
 interface TechBadgeProps {
   name: string
   value: number
@@ -17,16 +13,12 @@ export function TechBadge({ name, value }: TechBadgeProps) {
   }
 
   return (
-    <motion.div
-      className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium border bg-gradient-to-r ${getBgColor(value)} shadow-sm hover:shadow-md transition-all`}
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      viewport={{ once: true }}
-      whileHover={{ y: -2 }}
+    <div
+      className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium border bg-gradient-to-r ${getBgColor(value)} shadow-sm hover:shadow-md transition-all hover:-translate-y-1`}
     >
       {name}
       <span className="ml-2 text-xs opacity-80 font-bold">{value}%</span>
-    </motion.div>
+    </div>
   )
 }
 

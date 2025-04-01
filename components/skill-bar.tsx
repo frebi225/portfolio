@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react"
 import { Progress } from "@/components/ui/progress"
-import { motion } from "framer-motion"
 
 interface SkillBarProps {
   name: string
@@ -18,13 +17,7 @@ export function SkillBar({ name, value }: SkillBarProps) {
   }, [value])
 
   return (
-    <motion.div
-      className="space-y-1"
-      initial={{ opacity: 0, x: -20 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-    >
+    <div className="space-y-1 transition-all duration-300 hover:translate-x-1">
       <div className="flex justify-between text-sm">
         <span className="font-medium text-gray-700">{name}</span>
         <span className="text-orange-500 font-semibold">{value}%</span>
@@ -34,7 +27,7 @@ export function SkillBar({ name, value }: SkillBarProps) {
         className="h-2 bg-gray-200"
         indicatorClassName="bg-gradient-to-r from-blue-600 to-orange-500"
       />
-    </motion.div>
+    </div>
   )
 }
 

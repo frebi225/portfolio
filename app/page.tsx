@@ -10,7 +10,6 @@ import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
 import { SkillBar } from "@/components/skill-bar"
 import { TechBadge } from "@/components/tech-badge"
-import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -20,12 +19,7 @@ export default function Home() {
         <ParticlesBackground />
         <div className="container mx-auto px-4 py-12 relative z-10">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-            <motion.div
-              className="md:w-1/2 space-y-6"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
+            <div className="md:w-1/2 space-y-6 animate-fadeIn">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Salut, moi c'est <span className="text-orange-500">AUDREY FREBI</span> 👋
               </h1>
@@ -62,55 +56,35 @@ export default function Home() {
                   Télécharger CV <Download className="ml-2 h-4 w-4" />
                 </Button>
               </div>
-            </motion.div>
-            <motion.div
-              className="md:w-1/2 flex justify-center"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-            >
+            </div>
+            <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
                 <Image src="/moi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
-        <motion.div
+        <div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
           onClick={() => {
             document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })
           }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.5 }}
         >
           <ArrowRight className="h-8 w-8 text-white rotate-90" />
-        </motion.div>
+        </div>
       </section>
 
       {/* About Section */}
       <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
               Mon Parcours et mes Compétences
             </span>
-          </motion.h2>
+          </h2>
 
           {/* Parcours */}
-          <motion.div
-            className="mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="mb-16 animate-fadeIn animate-delay-300">
             <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center">
               <span className="w-10 h-1 bg-orange-500 mr-3"></span>
               Mon Parcours
@@ -135,7 +109,7 @@ export default function Home() {
                 pour gérer efficacement les projets.
               </p>
             </div>
-          </motion.div>
+          </div>
 
           {/* Compétences */}
           <div>
@@ -147,13 +121,7 @@ export default function Home() {
 
             <div className="space-y-8">
               {/* Compétences Techniques */}
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg border border-gray-100"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-              >
+              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 animate-fadeIn animate-delay-300">
                 <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
                   <span className="text-xl">Compétences Techniques</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
@@ -172,16 +140,10 @@ export default function Home() {
                     <SkillBar name="Programmation de jeux" value={23} />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Technologies */}
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg border border-gray-100"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.4 }}
-              >
+              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 animate-fadeIn animate-delay-500">
                 <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
                   <span className="text-xl">Technologies</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
@@ -203,16 +165,10 @@ export default function Home() {
                     <SkillBar name="Electron" value={40} />
                   </div>
                 </div>
-              </motion.div>
+              </div>
 
               {/* Autres Technologies */}
-              <motion.div
-                className="bg-white p-8 rounded-lg shadow-lg border border-gray-100"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.6 }}
-              >
+              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 animate-fadeIn animate-delay-700">
                 <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
                   <span className="text-xl">Autres Technologies</span>
                   <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
@@ -231,7 +187,7 @@ export default function Home() {
                   <TechBadge name="GraphQL" value={20} />
                   <TechBadge name="Intelligence Artificielle" value={15} />
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -240,25 +196,14 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
               Mes Réalisations Clés
             </span>
-          </motion.h2>
+          </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
+            <div className="animate-fadeIn animate-delay-100">
               <ProjectCard
                 title="Sikabôlô 💰"
                 description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
@@ -268,14 +213,9 @@ export default function Home() {
                 githubUrl="https://github.com/audreyfrebi/sikabolo"
                 liveUrl="https://sikabolo.vercel.app"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <div className="animate-fadeIn animate-delay-200">
               <ProjectCard
                 title="Jawondi 🎨"
                 description="Conception d'une maquette Figma pour une plateforme digitale."
@@ -284,14 +224,9 @@ export default function Home() {
                 fullDescription="Jawondi est un projet de conception UI/UX pour une plateforme digitale. J'ai créé l'ensemble des maquettes sur Figma, en mettant l'accent sur l'expérience utilisateur et l'esthétique moderne. Le projet comprend des wireframes, des prototypes interactifs et une documentation complète du design system. Cette maquette a ensuite été utilisée comme référence pour le développement de la plateforme."
                 liveUrl="https://www.figma.com/file/jawondi-project"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
+            <div className="animate-fadeIn animate-delay-300">
               <ProjectCard
                 title="Golden Instinct 🛍️"
                 description="Site internet e-commerce développé avec PHP et TailwindCSS."
@@ -301,14 +236,9 @@ export default function Home() {
                 githubUrl="https://github.com/audreyfrebi/golden-instinct"
                 liveUrl="https://golden-instinct.com"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-            >
+            <div className="animate-fadeIn animate-delay-400">
               <ProjectCard
                 title="Groupie Trackers 🎵"
                 description="Web app affichant des données d'artistes via une API."
@@ -318,14 +248,9 @@ export default function Home() {
                 githubUrl="https://github.com/audreyfrebi/groupie-trackers"
                 liveUrl="https://groupie-trackers.audreyfrebi.com"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
+            <div className="animate-fadeIn animate-delay-500">
               <ProjectCard
                 title="Forum en temps réel 💬"
                 description="Plateforme interactive avec WebSockets pour des discussions instantanées."
@@ -334,14 +259,9 @@ export default function Home() {
                 fullDescription="Ce forum en temps réel permet aux utilisateurs de discuter instantanément grâce à l'utilisation de WebSockets. Les messages sont mis à jour en temps réel sans avoir besoin de rafraîchir la page. J'ai utilisé Go pour le backend avec une base de données SQLite pour stocker les messages et les informations des utilisateurs. Le frontend est développé en JavaScript pur pour une expérience légère et rapide."
                 githubUrl="https://github.com/audreyfrebi/real-time-forum"
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-            >
+            <div className="animate-fadeIn animate-delay-600">
               <ProjectCard
                 title="ASCII Art 🎨"
                 description="Outil CLI convertissant du texte en ASCII art avec plusieurs styles."
@@ -350,7 +270,7 @@ export default function Home() {
                 fullDescription="ASCII Art est un outil en ligne de commande qui permet de convertir du texte en art ASCII avec différents styles et polices. L'outil prend en charge plusieurs options de personnalisation comme la taille, l'alignement et les couleurs. Développé entièrement en Go, cet outil peut être utilisé dans des scripts shell ou directement dans le terminal."
                 githubUrl="https://github.com/audreyfrebi/ascii-art"
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -361,55 +281,34 @@ export default function Home() {
           <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-center mb-16 text-white"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white animate-fadeIn">
             <span className="text-orange-500">Ce que je propose en Freelance</span>
-          </motion.h2>
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-            >
+            <div className="animate-fadeIn animate-delay-100">
               <ServiceCard
                 title="Développement Web"
                 description="Création de sites web modernes, optimisés et performants. Frontend & Backend avec Go, JavaScript et SQL."
                 icon={<Code className="h-10 w-10 text-orange-500" />}
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-            >
+            <div className="animate-fadeIn animate-delay-300">
               <ServiceCard
                 title="Optimisation de Code"
                 description="Analyse et amélioration des performances d'une application existante."
                 icon={<Zap className="h-10 w-10 text-orange-500" />}
               />
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
+            <div className="animate-fadeIn animate-delay-500">
               <ServiceCard
                 title="Gestion de Projet Tech"
                 description="Mise en place d'un workflow Agile/Trello. Accompagnement technique et conseils en structuration de projet."
                 icon={<ArrowRight className="h-10 w-10 text-orange-500" />}
               />
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -417,26 +316,14 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-b from-white to-gray-50">
         <div className="container mx-auto px-4">
-          <motion.h2
-            className="text-3xl md:text-4xl font-bold text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 animate-fadeIn">
             <span className="bg-gradient-to-r from-blue-900 to-orange-500 bg-clip-text text-transparent">
               Restons Connectés
             </span>
-          </motion.h2>
+          </h2>
 
           <div className="grid md:grid-cols-2 gap-12">
-            <motion.div
-              className="space-y-6"
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+            <div className="space-y-6 animate-fadeIn animate-delay-300">
               <h3 className="text-2xl font-semibold text-blue-900">Parlons de votre projet</h3>
               <p className="text-gray-700 leading-relaxed">
                 Un projet en tête ? Parlons-en ensemble et construisons quelque chose d'incroyable !
@@ -488,18 +375,13 @@ export default function Home() {
                   </Button>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
+            <div className="animate-fadeIn animate-delay-500">
               <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-100">
                 <ContactForm />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
