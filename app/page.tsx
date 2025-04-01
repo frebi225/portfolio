@@ -246,7 +246,7 @@ export default function Home() {
               <ProjectCard
                 title="Allo Depann+ 🚗"
                 description="Plateforme innovante qui connecte en temps réel les automobilistes en difficulté, les dépanneurs et les garages à Abidjan."
-                image="/placeholder.svg?height=200&width=300"
+                image="/allo.png?height=200&width=300"
                 tags={["Mobile", "Géolocalisation", "Temps réel"]}
                 fullDescription="🚗 Allo Depann+ est une plateforme innovante qui connecte en temps réel les automobilistes en panne avec des dépanneurs et garages professionnels de proximité, offrant une assistance rapide, géolocalisée et fiable à Abidjan. 🚗⚡"
                 githubUrl="https://github.com/audreyfrebi/allodepann"
@@ -258,9 +258,9 @@ export default function Home() {
               <ProjectCard
                 title="Make Your Game 🎮"
                 description="Jeu vidéo développé en JavaScript avec Canvas, proposant une expérience de jeu immersive et interactive."
-                image="/placeholder.svg?height=200&width=300"
+                image="/brik.png?height=200&width=300"
                 tags={["JavaScript", "Canvas", "Game Dev"]}
-                fullDescription="Make Your Game est un projet de développement de jeu vidéo réalisé en JavaScript avec l'API Canvas. Ce jeu propose une expérience interactive avec des graphismes soignés, des animations fluides et une mécanique de jeu engageante. J'ai implémenté un système de collision, une gestion des scores et différents niveaux de difficulté pour offrir une expérience complète aux joueurs."
+                fullDescription="Brick Breaker est un jeu d'arcade en solo développé en JavaScript vanilla, optimisé pour fonctionner à 60 FPS. Le jeu comprend une gestion de score, plusieurs niveaux de difficulté croissante et des effets sonores pour enrichir l'expérience utilisateur. En utilisant exclusivement JavaScript et la manipulation du DOM, sans aucune dépendance externe, une expérience de jeu fluide et réactive a été créée, mettant en avant des compétences en programmation JavaScript, en logique de jeu et en gestion des interactions utilisateur."
                 githubUrl="https://github.com/audreyfrebi/make-your-game"
                 liveUrl="https://make-your-game.audreyfrebi.com"
               />
