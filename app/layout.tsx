@@ -1,11 +1,15 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Poppins } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Navigation } from "@/components/navigation"
+import { Analytics } from "@vercel/analytics/react"
 
-const inter = Inter({ subsets: ["latin"] })
+const poppins = Poppins({
+  weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+})
 
 export const metadata: Metadata = {
   title: "AUDREY FREBI - Développeuse Full Stack Junior",
@@ -20,10 +24,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light">
+      <body className={`${poppins.className} bg-[#121212] text-white`}>
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <Navigation />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>
