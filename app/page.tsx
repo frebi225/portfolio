@@ -222,7 +222,7 @@ export default function Home() {
               <ProjectCard
                 title="Golden Instinct 🛍️"
                 description="Site internet e-commerce développé avec PHP et TailwindCSS."
-                image="/placeholder.svg?height=200&width=300"
+                image="/golden.jpeg?height=200&width=300"
                 tags={["PHP", "SQL", "TailwindCSS"]}
                 fullDescription="Golden Instinct est un site complet développé avec PHP et stylisé avec TailwindCSS. J'ai principalement géré le back-end et la base de données du site web de Golden Instinct, une entreprise multiservices. En utilisant PHP pour la logique serveur et MongoDB pour la gestion des données, j'ai développé une architecture robuste et optimisée. Mon travail a inclus la mise en place d'une API sécurisée, la gestion des utilisateurs et des transactions, ainsi que l'optimisation des requêtes pour assurer des performances élevées. Ce projet m'a permis de renforcer mes compétences en développement back-end, gestion de bases de données NoSQL et sécurisation des applications web."
                 githubUrl="https://github.com/audreyfrebi/golden-instinct"
@@ -234,7 +234,7 @@ export default function Home() {
               <ProjectCard
                 title="Groupie Trackers 🎵"
                 description="Web app affichant des données d'artistes via une API."
-                image="/placeholder.svg?height=200&width=300"
+                image="/groupie.png?height=200&width=300"
                 tags={["Go", "JavaScript", "API REST"]}
                 fullDescription="Groupie Trackers est une application web qui utilise une API pour afficher des informations détaillées sur des artistes musicaux. L'application permet aux utilisateurs de rechercher des artistes, de voir leurs dates de concert, leurs albums et d'autres informations pertinentes. J'ai développé cette application en utilisant Go pour le backend et JavaScript pour le frontend."
                 githubUrl="https://github.com/audreyfrebi/groupie-trackers"
@@ -246,7 +246,7 @@ export default function Home() {
               <ProjectCard
                 title="Forum en temps réel 💬"
                 description="Plateforme interactive avec WebSockets pour des discussions instantanées."
-                image="/placeholder.svg?height=200&width=300"
+                image="/forum.jpeg?height=200&width=300"
                 tags={["Go", "SQLite", "JavaScript"]}
                 fullDescription="Ce forum en temps réel permet aux utilisateurs de discuter instantanément grâce à l'utilisation de WebSockets. Les messages sont mis à jour en temps réel sans avoir besoin de rafraîchir la page. J'ai utilisé Go pour le backend avec une base de données SQLite pour stocker les messages et les informations des utilisateurs. Le frontend est développé en JavaScript pur pour une expérience légère et rapide."
                 githubUrl="https://github.com/audreyfrebi/real-time-forum"
@@ -257,7 +257,7 @@ export default function Home() {
               <ProjectCard
                 title="ASCII Art 🎨"
                 description="Outil CLI convertissant du texte en ASCII art avec plusieurs styles."
-                image="/placeholder.svg?height=200&width=300"
+                image="/art.png?height=200&width=300"
                 tags={["Go", "Shell"]}
                 fullDescription="ASCII Art est un outil en ligne de commande qui permet de convertir du texte en art ASCII avec différents styles et polices. L'outil prend en charge plusieurs options de personnalisation comme la taille, l'alignement et les couleurs. Développé entièrement en Go, cet outil peut être utilisé dans des scripts shell ou directement dans le terminal."
                 githubUrl="https://github.com/audreyfrebi/ascii-art"
