@@ -66,7 +66,14 @@ export function Navigation() {
                 {link.name}
               </button>
             ))}
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white">Télécharger CV</Button>
+            <Button
+                    size="lg"
+                    className="bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+                    onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
+                  >
+                    <Download className="h-5 w-5" />
+                    Télécharger mon CV
+                  </Button>
           </nav>
 
           {/* Mobile Menu Button */}

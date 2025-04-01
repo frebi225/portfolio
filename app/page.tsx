@@ -53,10 +53,8 @@ export default function Home() {
                   className="bg-white text-blue-900 hover:bg-orange-500 hover:text-white transition-all"
                   onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
                 >
-                  <Download className="h-5 w-5" />
-                  Télécharger mon CV
+                  Télécharger CV <Download className="ml-2 h-4 w-4" />
                 </Button>
-                </div>
               </div>
             </div>
             <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">
@@ -366,7 +364,16 @@ export default function Home() {
                   </Link>
                 </div>
 
-                
+                <div className="pt-4">
+                  <Button
+                    size="lg"
+                    className="bg-orange-500 hover:bg-orange-600 text-white flex items-center gap-2 shadow-lg hover:shadow-xl transition-all"
+                    onClick={() => window.open("/cv-audrey-frebi.pdf", "_blank")}
+                  >
+                    <Download className="h-5 w-5" />
+                    Télécharger mon CV
+                  </Button>
+                </div>
               </div>
             </div>
 
