@@ -350,7 +350,7 @@ export default function Home() {
                   <Mail className="h-5 w-5 text-orange-500" />
                   <a
                     href="mailto:audreyfrebi900@gmail.com"
-                    className="text-gray-700 hover:text-orange-500 transition-colors p-2 hover:bg-gray-100 rounded-full"
+                    className="text-gray-700 hover:text-blue-500 transition-colors p-2 hover:bg-gray-100 rounded-full"
                   >
                     audreyfrebi900@gmail.com
                   </a>
