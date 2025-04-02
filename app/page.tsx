@@ -346,7 +346,7 @@ export default function Home() {
               </p>
 
               <div className="space-y-4 pt-4">
-                <div className="flex items-center gap-4 p-4 bg-gray rounded-lg shadow-md transition-transform hover:translate-x-2">
+                <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md">
                   <Mail className="h-5 w-5 text-orange-500" />
                   <a
                     href="mailto:audreyfrebi900@gmail.com"
