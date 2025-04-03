@@ -84,7 +84,7 @@ export function ProjectCarousel({ children, className }: ProjectCarouselProps) {
         variant="outline"
         size="icon"
         className={cn(
-          "absolute left-2 top-1/2 -translate-y-1/2 bg-black/80 backdrop-blur-sm border-gray-200 shadow-md hover:bg-white",
+          "absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 backdrop-blur-sm border-gray-200 shadow-md hover:bg-black",
           currentIndex <= 0 && "opacity-50 cursor-not-allowed",
         )}
         onClick={handlePrev}
