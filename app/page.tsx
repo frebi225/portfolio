@@ -10,6 +10,7 @@ import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
 import { SkillBar } from "@/components/skill-bar"
 import { TechBadge } from "@/components/tech-badge"
+import { ProjectCarousel } from "@/components/project-carousel"
 
 export default function Home() {
   return (
