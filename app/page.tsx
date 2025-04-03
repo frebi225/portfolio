@@ -121,7 +121,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
                     <SkillBar name="Programmation élémentaire" value={75} />
-                    <SkillBar name="Administration système" value={80} />
+                    <SkillBar name="Administration système" value={65} />
                     <SkillBar name="Algorithmes élémentaires" value={55} />
                     <SkillBar name="Front-end" value={55} />
                   </div>
