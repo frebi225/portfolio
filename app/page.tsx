@@ -195,8 +195,8 @@ export default function Home() {
             </span>
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="animate-fadeIn animate-delay-100">
+          <ProjectCarousel>
+          <div className="h-full">
               <ProjectCard
                 title="Sikabôlô 💰"
                 description="Solution digitale de scoring de crédit, réalisée en Next.js pour un hackathon Digifemmes & Ecobank."
@@ -219,7 +219,7 @@ export default function Home() {
               />
             </div>
 
-            <div className="animate-fadeIn animate-delay-300">
+            <div className="h-full">
               <ProjectCard
                 title="Golden Instinct 🛍️"
                 description="Site internet e-commerce développé avec PHP et TailwindCSS."
@@ -286,11 +286,11 @@ export default function Home() {
                 tags={["Go", "Shell"]}
                 fullDescription="ASCII Art est un outil en ligne de commande qui permet de convertir du texte en art ASCII avec différents styles et polices. L'outil prend en charge plusieurs options de personnalisation comme la taille, l'alignement et les couleurs. Développé entièrement en Go, cet outil peut être utilisé dans des scripts shell ou directement dans le terminal."
                 githubUrl="https://github.com/audreyfrebi/ascii-art"
-              />
+                />
+                </div>
+              </ProjectCarousel>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
       {/* Services Section */}
       <section id="services" className="py-20 bg-gradient-to-b from-blue-900 to-blue-800 relative overflow-hidden">
