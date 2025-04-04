@@ -360,7 +360,7 @@ export default function Home() {
 
                 <div className="flex gap-4 p-4 bg-white rounded-lg shadow-md">
                   <Link
-                    href="https://github.com/frebi225"
+                    href="https://github.com/frebi1"
                     target="_blank"
                     className="text-gray-700 hover:text-orange-500 transition-colors p-2 hover:bg-gray-100 rounded-full"
                   >
