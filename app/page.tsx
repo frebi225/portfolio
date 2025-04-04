@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Code, Download, FileText, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
+import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"

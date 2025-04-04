@@ -1,7 +1,6 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Progress } from "@/components/ui/progress"
 
 interface SkillBarProps {
   name: string
@@ -22,11 +21,9 @@ export function SkillBar({ name, value }: SkillBarProps) {
         <span className="font-medium text-gray-700">{name}</span>
         <span className="text-orange-500 font-semibold">{value}%</span>
       </div>
-      <Progress
-        value={progress}
-        className="h-2 bg-gray-200"
-        indicatorClassName="bg-gradient-to-r from-blue-600 to-orange-500"
-      />
+      <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
+        <div className="h-full bg-gradient-to-r from-blue-600 to-orange-500" style={{ width: `${progress}%` }}></div>
+      </div>
     </div>
   )
 }
