@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
+import { ArrowRight, Code, Download, FileText, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
@@ -11,6 +11,7 @@ import { ParticlesBackground } from "@/components/particles-background"
 import { SkillBar } from "@/components/skill-bar"
 import { TechBadge } from "@/components/tech-badge"
 import { ProjectCarousel } from "@/components/project-carousel"
+import { EmailLink } from "@/components/email-link"
 
 export default function Home() {
   return (
@@ -348,13 +349,13 @@ export default function Home() {
 
               <div className="space-y-4 pt-4">
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md transition-transform hover:translate-x-2">
-                  <Mail className="h-5 w-5 text-orange-500" />
-                  <a
-                    href="mailto:audreyfrebi900@gmail.com"
-                    className="text-gray-700 hover:text-blue-500 transition-colors p-2 hover:bg-gray-100 rounded-full"
+                <Mail className="h-5 w-5 text-orange-500" />
+                  <EmailLink
+                    email="audreyfrebi900@gmail.com"
+                    className="text-gray-700 hover:text-orange-500 transition-colors"
                   >
                     audreyfrebi900@gmail.com
-                  </a>
+                  </EmailLink>
                 </div>
 
                 <div className="flex gap-4 p-4 bg-white rounded-lg shadow-md">
