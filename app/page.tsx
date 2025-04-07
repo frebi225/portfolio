@@ -412,7 +412,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
         <div className="container mx-auto px-4 text-center">
-          <p>© {new Date().getFullYear()} AUDREY FREBI - Développeuse Junior. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} AUDREY FREBI - Développeuse Full-Stack Junior. Tous droits réservés.</p>
         </div>
       </footer>
     </main>
