@@ -1,6 +1,7 @@
 "use server"
 
 import { createClient } from "@/lib/supabase/server"
+import { sendNotificationEmail } from "@/lib/email"
 
 export async function submitContactForm(formData: FormData) {
   try {
@@ -30,6 +31,13 @@ export async function submitContactForm(formData: FormData) {
         error: "Erreur lors de l'envoi du message",
       }
     }
+
+    // Envoyer un email de notification
+    await sendNotificationEmail({
+      name,
+      email,
+      message,
+    })
 
     return {
       success: true,

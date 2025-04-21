@@ -12,8 +12,24 @@ import { SkillBar } from "@/components/skill-bar"
 import { TechBadge } from "@/components/tech-badge"
 import { ProjectCarousel } from "@/components/project-carousel"
 import { EmailLink } from "@/components/email-link"
+import { EnhancedChatbot } from "@/components/enhanced-chatbot"
 
 export default function Home() {
+  const handleContactClick = () => {
+    // Vérifier si l'appareil est mobile
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
+    const email = "audreyfrebi900@gmail.com"
+
+    if (isMobile) {
+      // Sur mobile, utiliser mailto: qui ouvrira l'application de messagerie par défaut
+      window.location.href = `mailto:${email}`
+    } else {
+      // Sur desktop, ouvrir Gmail dans le navigateur
+      window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, "_blank")
+    }
+  }
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -85,23 +101,32 @@ export default function Home() {
               <span className="w-10 h-1 bg-orange-500 ml-3"></span>
             </h3>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Issue d'une formation en microbiologie, j'ai progressivement élargi mes compétences vers le
-                développement web et la gestion de projets digitaux. Passionnée par la technologie et l'innovation, j'ai
-                suivi plusieurs formations intensives qui m'ont permis d'acquérir une expertise en développement
-                full-stack, en gestion agile et en production de contenus numériques.
-              </p>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j'ai pu
-                approfondir mes connaissances en back-end, en bases de données et en intégration d'interfaces modernes.
-                Je maîtrise des technologies comme PHP, Next.js, MongoDB et TailwindCSS, et j'adopte des méthodologies
-                agiles pour assurer le bon déroulement des projets.
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                Mon approche est axée sur la résolution de problèmes et l'amélioration continue des solutions que je
-                développe. J'aime collaborer avec des équipes pluridisciplinaires et utiliser des méthodes Agile/Scrum
-                pour gérer efficacement les projets.
-              </p>
+              <div className="flex flex-col md:flex-row gap-8">
+                <div className="md:w-1/3 flex justify-center">
+                  <div className="relative w-64 h-64 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
+                    <Image src="/moi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
+                  </div>
+                </div>
+                <div className="md:w-2/3">
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    Issue d'une formation en microbiologie, j'ai progressivement élargi mes compétences vers le
+                    développement web et la gestion de projets digitaux. Passionnée par la technologie et l'innovation,
+                    j'ai suivi plusieurs formations intensives qui m'ont permis d'acquérir une expertise en
+                    développement full-stack, en gestion agile et en production de contenus numériques.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j'ai pu
+                    approfondir mes connaissances en back-end, en bases de données et en intégration d'interfaces
+                    modernes. Je maîtrise des technologies comme PHP, Next.js, MongoDB et TailwindCSS, et j'adopte des
+                    méthodologies agiles pour assurer le bon déroulement des projets.
+                  </p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Mon approche est axée sur la résolution de problèmes et l'amélioration continue des solutions que je
+                    développe. J'aime collaborer avec des équipes pluridisciplinaires et utiliser des méthodes
+                    Agile/Scrum pour gérer efficacement les projets.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -180,6 +205,7 @@ export default function Home() {
                   <TechBadge name="C++" value={20} />
                   <TechBadge name="GraphQL" value={20} />
                   <TechBadge name="Intelligence Artificielle" value={15} />
+                  <TechBadge name="GraphisteQL" value={10} />
                 </div>
               </div>
             </div>
@@ -348,8 +374,9 @@ export default function Home() {
               </p>
 
               <div className="space-y-4 pt-4">
+                {/* Remplacer le lien email dans la section Contact */}
                 <div className="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md transition-transform hover:translate-x-2">
-                <Mail className="h-5 w-5 text-orange-500" />
+                  <Mail className="h-5 w-5 text-orange-500" />
                   <EmailLink
                     email="audreyfrebi900@gmail.com"
                     className="text-gray-700 hover:text-orange-500 transition-colors"
@@ -415,6 +442,7 @@ export default function Home() {
           <p>© {new Date().getFullYear()} AUDREY FREBI - Développeuse Full-Stack Junior. Tous droits réservés.</p>
         </div>
       </footer>
+
     </main>
   )
 }
