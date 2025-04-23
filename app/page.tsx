@@ -10,9 +10,10 @@ import { ContactForm } from "@/components/contact-form"
 import { ParticlesBackground } from "@/components/particles-background"
 import { SkillBar } from "@/components/skill-bar"
 import { TechBadge } from "@/components/tech-badge"
+import { EnhancedChatbot } from "@/components/enhanced-chatbot"
+import { useEffect } from "react"
 import { ProjectCarousel } from "@/components/project-carousel"
 import { EmailLink } from "@/components/email-link"
-import { EnhancedChatbot } from "@/components/enhanced-chatbot"
 
 export default function Home() {
   const handleContactClick = () => {
@@ -30,6 +31,9 @@ export default function Home() {
     }
   }
 
+  useEffect(() => {
+    console.log("Page principale montée, le chatbot devrait être visible")
+  }, [])
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -443,6 +447,8 @@ export default function Home() {
         </div>
       </footer>
 
+      {/* Utiliser le chatbot amélioré - explicitement rendu ici */}
+      <EnhancedChatbot />
     </main>
   )
 }

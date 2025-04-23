@@ -190,18 +190,14 @@ export function EnhancedChatbot() {
       "bonjour",
       "salut",
       "hello",
-      "nuit",
-      "soir",
       "hi",
       "hey",
       "coucou",
       "oui",
-      "bonne",
       "non",
       "peut-être",
       "merci",
       "svp",
-      "bonsoir",
       "s'il vous plaît",
       "bien",
       "mal",
@@ -405,7 +401,7 @@ export function EnhancedChatbot() {
     return (
       <button
         onClick={toggleChat}
-        className="fixed bottom-6 right-6 bg-blue-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 z-50 transition-all duration-300 hover:scale-110"
+        className="fixed bottom-6 right-6 bg-blue-900 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 z-[9999] transition-all duration-300 hover:scale-110"
       >
         <MessageSquare className="h-6 w-6" />
       </button>
@@ -413,7 +409,7 @@ export function EnhancedChatbot() {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 w-80 md:w-96 bg-white rounded-lg shadow-xl z-50 overflow-hidden">
+    <div className="fixed bottom-6 right-6 w-80 md:w-96 bg-white rounded-lg shadow-xl z-[9999] overflow-hidden">
       {/* Header */}
       <div className="bg-blue-900 text-white p-4 rounded-t-lg flex items-center justify-between">
         <div className="flex items-center">
