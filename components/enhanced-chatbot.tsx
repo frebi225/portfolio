@@ -49,6 +49,8 @@ export function EnhancedChatbot() {
   // Fonction pour enregistrer un message dans la base de données
   const logChatMessage = async (sender: string, messageContent: string) => {
     try {
+      console.log("Envoi du message à l'API:", { conversationId, sender, message: messageContent })
+
       const response = await fetch("/api/chat-log", {
         method: "POST",
         headers: {
@@ -61,9 +63,12 @@ export function EnhancedChatbot() {
         }),
       })
 
+      const data = await response.json()
+
       if (!response.ok) {
-        const errorData = await response.json()
-        console.error("Erreur lors de l'enregistrement du message:", errorData)
+        console.error("Erreur lors de l'enregistrement du message:", data)
+      } else {
+        console.log("Message enregistré avec succès:", data)
       }
     } catch (error) {
       console.error("Erreur lors de l'enregistrement du message:", error)
@@ -125,6 +130,7 @@ export function EnhancedChatbot() {
     }, 1000)
   }
 
+  // Le reste du code reste inchangé...
   // Extraire le nom de la réponse de l'utilisateur
   const extractName = (input: string): string | null => {
     // Nettoyer l'entrée
