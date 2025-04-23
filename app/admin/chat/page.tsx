@@ -27,6 +27,8 @@ export default function AdminChatPage() {
   const [error, setError] = useState<string | null>(null)
 
   useEffect(() => {
+    // Modifier la fonction fetchConversations pour corriger l'erreur de typage
+
     const fetchConversations = async () => {
       try {
         setIsLoading(true)
@@ -42,11 +44,23 @@ export default function AdminChatPage() {
         }
 
         if (data) {
-          setConversations(data)
+          // Assurez-vous que les données correspondent au type Conversation
+          const typedConversations = data.map((conv) => ({
+            id: conv.id,
+            conversation_id: conv.conversation_id,
+            messages: Array.isArray(conv.messages) ? conv.messages : [],
+            last_message: conv.last_message || "",
+            last_sender: conv.last_sender || "",
+            last_timestamp: conv.last_timestamp || new Date().toISOString(),
+            created_at: conv.created_at || new Date().toISOString(),
+            updated_at: conv.updated_at || new Date().toISOString(),
+          })) as Conversation[]
+
+          setConversations(typedConversations)
 
           // Sélectionner la première conversation par défaut
-          if (data.length > 0 && !selectedConversation) {
-            setSelectedConversation(data[0].conversation_id)
+          if (typedConversations.length > 0 && !selectedConversation) {
+            setSelectedConversation(typedConversations[0].conversation_id)
           }
         }
       } catch (err) {
