@@ -3,24 +3,25 @@
 import { useState, useEffect } from "react"
 import { createClient } from "@/lib/supabase/client"
 
-interface ChatMessage {
-  id: number
-  conversation_id: string
+interface MessageEntry {
   sender: string
-  message: string
+  content: string
   timestamp: string
-  is_read: boolean
 }
 
-interface ConversationGroup {
-  id: string
-  messages: ChatMessage[]
-  lastMessage: string
-  lastTimestamp: string
+interface Conversation {
+  id: number
+  conversation_id: string
+  messages: MessageEntry[]
+  last_message: string
+  last_sender: string
+  last_timestamp: string
+  created_at: string
+  updated_at: string
 }
 
 export default function AdminChatPage() {
-  const [conversations, setConversations] = useState<ConversationGroup[]>([])
+  const [conversations, setConversations] = useState<Conversation[]>([])
   const [selectedConversation, setSelectedConversation] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
@@ -31,42 +32,21 @@ export default function AdminChatPage() {
         setIsLoading(true)
         const supabase = createClient()
 
-        const { data, error } = await supabase.from("chat_logs").select("*").order("timestamp", { ascending: true })
+        const { data, error } = await supabase
+          .from("conversations")
+          .select("*")
+          .order("updated_at", { ascending: false })
 
         if (error) {
           throw error
         }
 
         if (data) {
-          // Grouper les messages par conversation_id
-          const groupedConversations: Record<string, ChatMessage[]> = {}
-
-          data.forEach((message: ChatMessage) => {
-            if (!groupedConversations[message.conversation_id]) {
-              groupedConversations[message.conversation_id] = []
-            }
-            groupedConversations[message.conversation_id].push(message)
-          })
-
-          // Transformer en tableau et ajouter des métadonnées
-          const conversationsArray: ConversationGroup[] = Object.entries(groupedConversations).map(([id, messages]) => {
-            const lastMsg = messages[messages.length - 1]
-            return {
-              id,
-              messages,
-              lastMessage: lastMsg.message,
-              lastTimestamp: lastMsg.timestamp,
-            }
-          })
-
-          // Trier par date du dernier message (plus récent en premier)
-          conversationsArray.sort((a, b) => new Date(b.lastTimestamp).getTime() - new Date(a.lastTimestamp).getTime())
-
-          setConversations(conversationsArray)
+          setConversations(data)
 
           // Sélectionner la première conversation par défaut
-          if (conversationsArray.length > 0 && !selectedConversation) {
-            setSelectedConversation(conversationsArray[0].id)
+          if (data.length > 0 && !selectedConversation) {
+            setSelectedConversation(data[0].conversation_id)
           }
         }
       } catch (err) {
@@ -94,7 +74,7 @@ export default function AdminChatPage() {
     })
   }
 
-  const selectedConversationData = conversations.find((conv) => conv.id === selectedConversation)
+  const selectedConversationData = conversations.find((conv) => conv.conversation_id === selectedConversation)
 
   if (isLoading) {
     return (
@@ -138,19 +118,24 @@ export default function AdminChatPage() {
               <div className="divide-y divide-gray-200 max-h-[600px] overflow-y-auto">
                 {conversations.map((conv) => (
                   <button
-                    key={conv.id}
+                    key={conv.conversation_id}
                     className={`w-full text-left p-4 hover:bg-gray-50 transition-colors ${
-                      selectedConversation === conv.id ? "bg-blue-50" : ""
+                      selectedConversation === conv.conversation_id ? "bg-blue-50" : ""
                     }`}
-                    onClick={() => setSelectedConversation(conv.id)}
+                    onClick={() => setSelectedConversation(conv.conversation_id)}
                   >
                     <div className="flex justify-between items-start">
                       <div className="truncate flex-1">
-                        <p className="font-medium">Conversation #{conv.id.substring(0, 8)}...</p>
-                        <p className="text-sm text-gray-500 truncate">{conv.lastMessage}</p>
+                        <p className="font-medium">Conversation #{conv.conversation_id.substring(0, 8)}...</p>
+                        <p className="text-sm text-gray-500 truncate">
+                          <span className={conv.last_sender === "Visiteur" ? "font-semibold" : ""}>
+                            {conv.last_sender}:
+                          </span>{" "}
+                          {conv.last_message}
+                        </p>
                       </div>
                       <span className="text-xs text-gray-400 whitespace-nowrap ml-2">
-                        {formatDate(conv.lastTimestamp)}
+                        {formatDate(conv.last_timestamp)}
                       </span>
                     </div>
                   </button>
@@ -170,9 +155,9 @@ export default function AdminChatPage() {
 
               {selectedConversationData ? (
                 <div className="p-4 max-h-[600px] overflow-y-auto">
-                  {selectedConversationData.messages.map((msg) => (
+                  {selectedConversationData.messages.map((msg, index) => (
                     <div
-                      key={msg.id}
+                      key={index}
                       className={`mb-4 p-3 rounded-lg max-w-[80%] ${
                         msg.sender === "Assistant"
                           ? "bg-blue-100 text-gray-800 mr-auto"
@@ -183,7 +168,7 @@ export default function AdminChatPage() {
                         <span className="font-semibold text-sm">{msg.sender}</span>
                         <span className="text-xs opacity-70">{formatDate(msg.timestamp)}</span>
                       </div>
-                      <p>{msg.message}</p>
+                      <p>{msg.content}</p>
                     </div>
                   ))}
                 </div>
