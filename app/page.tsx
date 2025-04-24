@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap } from "lucide-react"
+import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap, GraduationCap, Database } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
@@ -149,7 +149,7 @@ export default function Home() {
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
-                    💼
+                    <GraduationCap className="h-4 w-4" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900">Programme Digifemmes Développeuse Web</h4>
@@ -158,7 +158,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
-                    💼
+                    <Briefcase className="h-4 w-4" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900">Formation en gestion de projet et montage vidéo</h4>
@@ -167,7 +167,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
-                    💼
+                    <Database className="h-4 w-4" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900">Initiation à l'analyse de données</h4>
