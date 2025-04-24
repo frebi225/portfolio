@@ -113,7 +113,7 @@ export default function Home() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-700 leading-relaxed mb-4 text-justify">
-                    Issue d'une formation en microbiologie, j'ai progressivement élargi mes compétences vers le
+                    Issue d'une formation  initiale en microbiologie, j'ai progressivement élargi mes compétences vers le
                     développement web et la gestion de projets numériques. Curieuse et passionnée par la technologie,
                     j'ai suivi des formations intensives comme le programme Digifemmes et des ateliers professionnels en
                     gestion de projet et création de contenu numérique. Ces expériences m'ont permis d'acquérir des
@@ -138,6 +138,45 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Formations */}
+          <div className="mb-16">
+            <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center">
+              <span className="w-10 h-1 bg-orange-500 mr-3"></span>
+              Formations
+              <span className="w-10 h-1 bg-orange-500 ml-3"></span>
+            </h3>
+            <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+                    💼
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900">Programme Digifemmes Développeuse Web</h4>
+                    <p className="text-gray-700">Formation intensive en développement web et mobile</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+                    💼
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900">Formation en gestion de projet et montage vidéo</h4>
+                    <p className="text-gray-700">Simplon / Ministère de la Jeunesse</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+                    💼
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900">Initiation à l'analyse de données</h4>
+                    <p className="text-gray-700">CISCO</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
 
           {/* Compétences */}
           <div>
@@ -214,6 +253,62 @@ export default function Home() {
                   <TechBadge name="C++" value={20} />
                   <TechBadge name="GraphQL" value={20} />
                   <TechBadge name="Intelligence Artificielle" value={15} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+              {/* Compétences transversales */}
+              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+                <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
+                  <span className="text-xl">Compétences transversales</span>
+                  <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Gestion de projet agile</h5>
+                      <p className="text-gray-700 text-sm">
+                        Utilisation de méthodes Scrum et Kanban pour planifier, organiser et suivre l'avancement des
+                        projets.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Création de contenus digitaux</h5>
+                      <p className="text-gray-700 text-sm">
+                        Production de vidéos pédagogiques, veille technologique, podcasts et contenus destinés aux
+                        réseaux sociaux.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Outils collaboratifs</h5>
+                      <p className="text-gray-700 text-sm">
+                        Maîtrise de Trello, Notion, Google Workspace pour le travail en équipe et le suivi des tâches.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Communication & vulgarisation</h5>
+                      <p className="text-gray-700 text-sm">
+                        Intérêt pour la simplification des concepts techniques à travers des formats clairs et accessibles, avec une forte volonté d’apprendre à partager ces savoirs de manière engageante
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Autonomie et adaptabilité</h5>
+                      <p className="text-gray-700 text-sm">
+                        Capacité à évoluer dans des environnements variés (formation, projets tech, contenus créatifs).
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Esprit analytique </h5>
+                      <p className="text-gray-700 text-sm">
+                      Capacité à aborder les problématiques complexes avec méthode et logique, issue de ma formation en microbiologie, et à adapter cette approche aux défis techniques du développement web.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
