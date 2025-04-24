@@ -260,62 +260,6 @@ export default function Home() {
         </div>
       </section>
 
-              {/* Compétences transversales */}
-              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
-                <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
-                  <span className="text-xl">Compétences transversales</span>
-                  <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Gestion de projet agile</h5>
-                      <p className="text-gray-700 text-sm">
-                        Utilisation de méthodes Scrum et Kanban pour planifier, organiser et suivre l'avancement des
-                        projets.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Création de contenus digitaux</h5>
-                      <p className="text-gray-700 text-sm">
-                        Production de vidéos pédagogiques, veille technologique, podcasts et contenus destinés aux
-                        réseaux sociaux.
-                      </p>
-                    </div>
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Outils collaboratifs</h5>
-                      <p className="text-gray-700 text-sm">
-                        Maîtrise de Trello, Notion, Google Workspace pour le travail en équipe et le suivi des tâches.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Communication & vulgarisation</h5>
-                      <p className="text-gray-700 text-sm">
-                        Intérêt pour la simplification des concepts techniques à travers des formats clairs et accessibles, avec une forte volonté d’apprendre à partager ces savoirs de manière engageante
-                      </p>
-                    </div>
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Autonomie et adaptabilité</h5>
-                      <p className="text-gray-700 text-sm">
-                        Capacité à évoluer dans des environnements variés (formation, projets tech, contenus créatifs).
-                      </p>
-                    </div>
-                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                      <h5 className="font-medium text-blue-900 mb-2">Esprit analytique </h5>
-                      <p className="text-gray-700 text-sm">
-                      Capacité à aborder les problématiques complexes avec méthode et logique, issue de ma formation en microbiologie, et à adapter cette approche aux défis techniques du développement web.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
         <div className="container mx-auto px-4">
