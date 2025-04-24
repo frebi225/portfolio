@@ -46,8 +46,8 @@ export default function Home() {
                 Salut, moi c'est <span className="text-orange-500">AUDREY FREBI</span> 👋
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
-                Passionnée par le développement web et la gestion de projets numériques, je combine des compétences
-                techniques et organisationnelles pour concevoir des solutions digitales performantes.
+              Formée au développement web et à la gestion agile, je conçois des solutions numériques avec passion, 
+              en plaçant l’utilité et la collaboration au cœur de chaque projet.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button
@@ -113,11 +113,16 @@ export default function Home() {
                 </div>
                 <div className="md:w-2/3">
                   <p className="text-gray-700 leading-relaxed mb-4">
-                  Issue d’une formation en microbiologie, j’ai progressivement élargi mes compétences vers le développement web et la gestion de projets numériques. Curieuse et passionnée par la technologie, j’ai suivi des formations intensives comme le programme Digifemmes et des ateliers professionnels en gestion de projet et création de contenu numérique.
+                         Issue d’une formation en microbiologie, j’ai progressivement élargi mes compétences vers le développement web 
+                  et la gestion de projets numériques. Curieuse et passionnée par la technologie, j’ai suivi des formations intensives 
+                  comme le programme Digifemmes et des ateliers professionnels en gestion de projet et création de contenu numérique.
 
-Ces expériences m'ont permis d'acquérir des compétences solides en développement full-stack, en gestion agile et en production de supports digitaux. J’ai pu les mettre en pratique à travers divers projets collaboratifs mêlant conception d’interfaces, manipulation de bases de données, interactions en temps réel et création de contenus pédagogiques.
+                         Ces expériences m'ont permis d'acquérir des compétences solides en développement full-stack, en gestion agile 
+                  et en production de supports digitaux. J’ai pu les mettre en pratique à travers divers projets collaboratifs mêlant 
+                  conception d’interfaces, manipulation de bases de données, interactions en temps réel et création de contenus pédagogiques.
 
-Mon approche est centrée sur la résolution de problèmes, l’amélioration continue et le travail en équipe, en m’appuyant sur des méthodologies agiles comme Scrum et Kanban pour mener à bien chaque étape des projets.
+                         Mon approche est centrée sur la résolution de problèmes, l’amélioration continue et le travail en équipe, en 
+                  m’appuyant sur des méthodologies agiles comme Scrum et Kanban pour mener à bien chaque étape des projets.
                   </p>
                   <p className="text-gray-700 leading-relaxed mb-4">
                     À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j'ai pu
