@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
                   <div className="relative w-72 h-72 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
-                    <Image src="/frebi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
+                    <Image src="/frebi.jpeg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3">
