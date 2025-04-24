@@ -45,7 +45,7 @@ export default function Home() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">
                 Salut, moi c'est <span className="text-orange-500">AUDREY FREBI</span> 👋
               </h1>
-              <p className="text-xl text-white/90 leading-relaxed">
+              <p className="text-xl text-white/90 leading-relaxed text-justify">
               Formée au développement web et à la gestion agile, je conçois des solutions numériques avec passion, 
               en plaçant l’utilité et la collaboration au cœur de chaque projet.
               </p>
@@ -98,7 +98,7 @@ export default function Home() {
           </h2>
 
           {/* Parcours */}
-          <div className="mb-16 animate-fadeIn animate-delay-300">
+          <div className="mb-16">
             <h3 className="text-2xl font-semibold text-blue-900 mb-6 flex items-center">
               <span className="w-10 h-1 bg-orange-500 mr-3"></span>
               Mon Parcours
@@ -107,30 +107,28 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
-                  <div className="relative w-64 h-64 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
+                  <div className="relative w-72 h-72 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
                     <Image src="/moi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3">
-                  <p className="text-gray-700 leading-relaxed mb-4">
-                         Issue d’une formation en microbiologie, j’ai progressivement élargi mes compétences vers le développement web 
-                  et la gestion de projets numériques. Curieuse et passionnée par la technologie, j’ai suivi des formations intensives 
-                  comme le programme Digifemmes et des ateliers professionnels en gestion de projet et création de contenu numérique.
-
-                         Ces expériences m'ont permis d'acquérir des compétences solides en développement full-stack, en gestion agile 
-                  et en production de supports digitaux. J’ai pu les mettre en pratique à travers divers projets collaboratifs mêlant 
-                  conception d’interfaces, manipulation de bases de données, interactions en temps réel et création de contenus pédagogiques.
-
-                         Mon approche est centrée sur la résolution de problèmes, l’amélioration continue et le travail en équipe, en 
-                  m’appuyant sur des méthodologies agiles comme Scrum et Kanban pour mener à bien chaque étape des projets.
+                  <p className="text-gray-700 leading-relaxed mb-4 text-justify">
+                    Issue d'une formation en microbiologie, j'ai progressivement élargi mes compétences vers le
+                    développement web et la gestion de projets numériques. Curieuse et passionnée par la technologie,
+                    j'ai suivi des formations intensives comme le programme Digifemmes et des ateliers professionnels en
+                    gestion de projet et création de contenu numérique. Ces expériences m'ont permis d'acquérir des
+                    compétences solides en développement full-stack, en gestion agile et en production de supports
+                    digitaux. J'ai pu les mettre en pratique à travers divers projets collaboratifs mêlant conception
+                    d'interfaces, manipulation de bases de données, interactions en temps réel et création de contenus
+                    pédagogiques.
                   </p>
-                  <p className="text-gray-700 leading-relaxed mb-4">
+                  <p className="text-gray-700 leading-relaxed mb-4 text-justify">
                     À travers mes projets, notamment Golden Instinct et d'autres plateformes interactives, j'ai pu
                     approfondir mes connaissances en back-end, en bases de données et en intégration d'interfaces
                     modernes. Je maîtrise des technologies comme PHP, Next.js, MongoDB et TailwindCSS, et j'adopte des
                     méthodologies agiles pour assurer le bon déroulement des projets.
                   </p>
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-justify">
                     Mon approche est axée sur la résolution de problèmes et l'amélioration continue des solutions que je
                     développe. J'aime collaborer avec des équipes pluridisciplinaires et utiliser des méthodes
                     Agile/Scrum pour gérer efficacement les projets.
@@ -139,6 +137,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+
 
           {/* Compétences */}
           <div>
@@ -215,7 +214,6 @@ export default function Home() {
                   <TechBadge name="C++" value={20} />
                   <TechBadge name="GraphQL" value={20} />
                   <TechBadge name="Intelligence Artificielle" value={15} />
-                  <TechBadge name="GraphisteQL" value={10} />
                 </div>
               </div>
             </div>
