@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap, GraduationCap, Database } from "lucide-react"
+import { ArrowRight, Code, Download, Github, Linkedin, Mail, Twitter, Zap, Briefcase,GraduationCap, Database } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
 import { ServiceCard } from "@/components/service-card"
@@ -259,6 +259,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
