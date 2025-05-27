@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
-                <Image src="/audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
+                <Image src="portfo.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
                   <div className="relative w-72 h-72 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
-                    <Image src="portfo.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
+                    <Image src="audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3">
