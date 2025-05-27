@@ -429,32 +429,67 @@ export default function Home() {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white animate-fadeIn">
-            <span className="text-orange-500">Ce que je propose en Freelance</span>
+            <span className="text-orange-500">Mes services (Freelance)</span>
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="animate-fadeIn animate-delay-100">
-              <ServiceCard
-                title="Développement Web"
-                description="Création de sites web modernes, optimisés et performants. Frontend & Backend avec Go, JavaScript et SQL."
-                icon={<Code className="h-10 w-10 text-orange-500" />}
-              />
-            </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 border border-white/20">
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4 animate-fadeIn animate-delay-100">
+                    <div className="flex-shrink-0 w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Création de sites vitrines</h3>
+                      <p className="text-blue-100 text-sm">Pour particuliers ou petites entreprises</p>
+                    </div>
+                  </div>
 
-            <div className="animate-fadeIn animate-delay-300">
-              <ServiceCard
-                title="Optimisation de Code"
-                description="Analyse et amélioration des performances d'une application existante."
-                icon={<Zap className="h-10 w-10 text-orange-500" />}
-              />
-            </div>
+                  <div className="flex items-start space-x-4 animate-fadeIn animate-delay-300">
+                    <div className="flex-shrink-0 w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Développement d'interfaces responsives</h3>
+                      <p className="text-blue-100 text-sm">Avec HTML, CSS, JavaScript</p>
+                    </div>
+                  </div>
+                </div>
 
-            <div className="animate-fadeIn animate-delay-500">
-              <ServiceCard
-                title="Gestion de Projet Tech"
-                description="Mise en place d'un workflow Agile/Trello. Accompagnement technique et conseils en structuration de projet."
-                icon={<ArrowRight className="h-10 w-10 text-orange-500" />}
-              />
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4 animate-fadeIn animate-delay-500">
+                    <div className="flex-shrink-0 w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Déploiement rapide</h3>
+                      <p className="text-blue-100 text-sm">De landing pages ou portails web</p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start space-x-4 animate-fadeIn animate-delay-700">
+                    <div className="flex-shrink-0 w-3 h-3 bg-orange-500 rounded-full mt-2"></div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">Maintenance de sites existants</h3>
+                      <p className="text-blue-100 text-sm">Debug, amélioration, refonte</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8 pt-8 border-t border-white/20 text-center animate-fadeIn animate-delay-900">
+                <p className="text-white text-lg leading-relaxed">
+                  Je suis à l'écoute de vos besoins, avec <span className="text-orange-500 font-semibold">attention</span>
+                  ,<span className="text-orange-500 font-semibold"> créativité</span>, et
+                  <span className="text-orange-500 font-semibold"> envie d'apprendre</span>.
+                </p>
+                <div className="mt-6">
+                  <Button
+                    size="lg"
+                    className="bg-orange-500 hover:bg-orange-600 text-white font-medium px-8 py-3 rounded-md transition-all hover:scale-105"
+                    onClick={() => {
+                      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                    }}
+                  >
+                    Discutons de votre projet
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
