@@ -311,7 +311,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-      </section>
+
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
