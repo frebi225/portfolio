@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
-                <Image src="/moi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
+                <Image src="/audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
                   <div className="relative w-72 h-72 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
-                    <Image src="/audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
+                    <Image src="portfo.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -255,10 +255,7 @@ export default function Home() {
                   <TechBadge name="Intelligence Artificielle" value={15} />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
               {/* Compétences transversales */}
               <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
@@ -293,7 +290,8 @@ export default function Home() {
                     <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
                       <h5 className="font-medium text-blue-900 mb-2">Communication & vulgarisation</h5>
                       <p className="text-gray-700 text-sm">
-                        Intérêt pour la simplification des concepts techniques à travers des formats clairs et accessibles, avec une forte volonté d’apprendre à partager ces savoirs de manière engageante
+                        Intérêt pour la simplification des concepts techniques à travers des formats clairs et
+                        accessibles, avec une forte volonté d'apprendre à partager ces savoirs de manière engageante
                       </p>
                     </div>
                     <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
@@ -305,12 +303,17 @@ export default function Home() {
                     <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
                       <h5 className="font-medium text-blue-900 mb-2">Approche scientifique</h5>
                       <p className="text-gray-700 text-sm">
-                      Capacité à aborder les problématiques complexes avec méthode et logique, issue de ma formation en microbiologie, et à adapter cette approche aux défis techniques du développement web.
+                        Capacité à aborder les problématiques complexes avec méthode et logique, issue de ma formation
+                        en microbiologie, et à adapter cette approche aux défis techniques du développement web.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       {/* Projects Section */}
