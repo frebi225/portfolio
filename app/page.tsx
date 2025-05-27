@@ -507,11 +507,17 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-6 animate-fadeIn animate-delay-300">
               <h3 className="text-2xl font-semibold text-blue-900">Parlons de votre projet</h3>
-              <p className="text-gray-700 leading-relaxed">
-              Une idée de projet ? Une mission ? Ou juste une question ?
-              Écris-moi ! Je suis ouverte aux échanges, collaborations et retours constructifs.
-              N’hésite pas à me contacter via le formulaire ou directement par mail.
-              </p>
+              <div className="space-y-3">
+                <p className="text-gray-700 leading-relaxed">
+                  Une idée de projet ? Une mission ? Ou juste une question ?
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  Écris-moi ! Je suis ouverte aux échanges, collaborations et retours constructifs.
+                </p>
+                <p className="text-gray-700 leading-relaxed">
+                  N'hésite pas à me contacter via le formulaire ou directement par mail.
+                </p>
+              </div>
 
               <div className="space-y-4 pt-4">
                 {/* Remplacer le lien email dans la section Contact */}
