@@ -73,7 +73,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 flex justify-center animate-fadeIn animate-delay-300">
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
-                <Image src="/audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
+                <Image src="/moi.png" alt="Portrait d'Audrey Frebi" fill className="object-cover" priority />
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center">
                   <div className="relative w-72 h-72 rounded-lg overflow-hidden border-4 border-orange-500/20 shadow-xl">
-                    <Image src="/frebi.jpeg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
+                    <Image src="/audrey.jpg" alt="Portrait d'Audrey Frebi" fill className="object-cover" />
                   </div>
                 </div>
                 <div className="md:w-2/3">
@@ -260,6 +260,61 @@ export default function Home() {
         </div>
       </section>
 
+              {/* Compétences transversales */}
+              <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+                <h4 className="font-semibold text-blue-900 mb-6 inline-block relative">
+                  <span className="text-xl">Compétences transversales</span>
+                  <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-500/50"></span>
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Gestion de projet agile</h5>
+                      <p className="text-gray-700 text-sm">
+                        Utilisation de méthodes Scrum et Kanban pour planifier, organiser et suivre l'avancement des
+                        projets.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Création de contenus digitaux</h5>
+                      <p className="text-gray-700 text-sm">
+                        Production de vidéos pédagogiques, veille technologique, podcasts et contenus destinés aux
+                        réseaux sociaux.
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Outils collaboratifs</h5>
+                      <p className="text-gray-700 text-sm">
+                        Maîtrise de Trello, Notion, Google Workspace pour le travail en équipe et le suivi des tâches.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Communication & vulgarisation</h5>
+                      <p className="text-gray-700 text-sm">
+                        Intérêt pour la simplification des concepts techniques à travers des formats clairs et accessibles, avec une forte volonté d’apprendre à partager ces savoirs de manière engageante
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Autonomie et adaptabilité</h5>
+                      <p className="text-gray-700 text-sm">
+                        Capacité à évoluer dans des environnements variés (formation, projets tech, contenus créatifs).
+                      </p>
+                    </div>
+                    <div className="p-4 bg-blue-50 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                      <h5 className="font-medium text-blue-900 mb-2">Approche scientifique</h5>
+                      <p className="text-gray-700 text-sm">
+                      Capacité à aborder les problématiques complexes avec méthode et logique, issue de ma formation en microbiologie, et à adapter cette approche aux défis techniques du développement web.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-gradient-to-b from-gray-50 to-gray-100">
@@ -418,7 +473,9 @@ export default function Home() {
             <div className="space-y-6 animate-fadeIn animate-delay-300">
               <h3 className="text-2xl font-semibold text-blue-900">Parlons de votre projet</h3>
               <p className="text-gray-700 leading-relaxed">
-                Un projet en tête ? Parlons-en ensemble et construisons quelque chose d'incroyable !
+              Une idée de projet ? Une mission ? Ou juste une question ?
+              Écris-moi ! Je suis ouverte aux échanges, collaborations et retours constructifs.
+              N’hésite pas à me contacter via le formulaire ou directement par mail.
               </p>
 
               <div className="space-y-4 pt-4">
