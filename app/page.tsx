@@ -152,7 +152,7 @@ export default function Home() {
                     <GraduationCap className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-blue-900">Programme Digifemmes Développeuse Web</h4>
+                    <h4 className="font-semibold text-blue-900">Programme Digifemmes Développeuse Full-stack</h4>
                     <p className="text-gray-700">Formation intensive en développement web et mobile</p>
                   </div>
                 </li>
