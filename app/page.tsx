@@ -174,7 +174,7 @@ export default function Home() {
                   <div>
                     <h4 className="font-semibold text-blue-900">Coursera — Google Cybersecurity Professional Certificate</h4>
                     <p className="text-gray-700">
-                    Gestion des risques, des menaces et des vulnérabilités, la sécurité des réseaux (IDS, SIEM), ainsi que l'automatisation avec Linux, SQL et Python, validé à travers 8 modules pratiques pour les métiers débutants en cybersécurité.
+                    Gestion des risques, des menaces et des vulnérabilités, la sécurité des réseaux (IDS, SIEM), ainsi que l'automatisation avec Linux, SQL et Python.
                     </p>
                   </div>
                 </li>
