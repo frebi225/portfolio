@@ -161,6 +161,26 @@ export default function Home() {
                     <Briefcase className="h-4 w-4" />
                   </div>
                   <div>
+                    <h4 className="font-semibold text-blue-900">We.Code — Formation Sécurité Numérique</h4>
+                    <p className="text-gray-700">
+                      Réseaux, bonnes pratiques, sécurisation sous Linux avec Wireshark et pare-feux
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+                    <GraduationCap className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900">
+                      Femmes Connectées — Formation intensive aux outils d'IA
+                    </h4>
+                    <p className="text-gray-700">
+                      Outils d'intelligence artificielle pour la productivité, automatisation et génération d'idées
+                      innovantes
+                    </p>
+                  </div>
+                  <div>
                     <h4 className="font-semibold text-blue-900">Formation en gestion de projet et montage vidéo</h4>
                     <p className="text-gray-700">Simplon / Ministère de la Jeunesse</p>
                   </div>
@@ -346,6 +366,18 @@ export default function Home() {
                 tags={["UI/UX Design", "Figma"]}
                 fullDescription="Jawondi est un projet de conception UI/UX pour une plateforme digitale. J'ai créé l'ensemble des maquettes sur Figma, en mettant l'accent sur l'expérience utilisateur et l'esthétique moderne. Le projet comprend des wireframes, des prototypes interactifs et une documentation complète du design system. Cette maquette a ensuite été utilisée comme référence pour le développement de la plateforme."
                 liveUrl="https://www.figma.com/file/jawondi-project"
+              />
+            </div>
+
+            <div className="h-full">
+              <ProjectCard
+                title="Orivie 🏥"
+                description="Application mobile e-santé pour l'accès sécurisé au dossier médical numérique en Côte d'Ivoire."
+                image="/orivie.png?height=200&width=300"
+                tags={["Mobile", "E-santé", "CMU", "IA", "Géolocalisation"]}
+                fullDescription="Orivie est une application mobile e-santé révolutionnaire destinée aux patients ivoiriens, permettant un accès sécurisé et centralisé au dossier médical numérique partout en Côte d'Ivoire, même en zone rurale. Elle facilite la prise en charge médicale, améliore la gestion des urgences et offre un suivi continu de la santé grâce à l'intégration du numéro CMU (13 chiffres) comme identifiant unique. L'application propose des fonctionnalités avancées comme l'inscription via numéro CMU, la connexion sécurisée par QR Code, un tableau de bord patient complet, la localisation des centres de santé acceptant la CMU, la Météo Santé avec alertes sanitaires locales, un chatbot IA santé (texte et vocal), et une visualisation cartographique des soins disponibles. Le projet intègre les données publiques ivoiriennes (data.gouv.ci, INS, Ministère de la Santé) et propose un modèle économique freemium pour les patients avec des abonnements professionnels pour les centres de santé."
+                githubUrl="https://github.com/audreyfrebi/orivie"
+                liveUrl="https://drive.google.com/file/d/1_M3na2DyJ88QRUiySiA0xHHCgMdWp7Xr/view?usp=sharing"
               />
             </div>
 
