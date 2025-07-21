@@ -385,7 +385,7 @@ export default function Home() {
               <ProjectCard
                 title="Golden Instinct 🛍️"
                 description="Site internet e-commerce développé avec PHP et TailwindCSS."
-                image="/golden.jpeg?height=150&width=300"
+                image="/golden.jpeg?height=100&width=200"
                 tags={["PHP", "SQL", "TailwindCSS"]}
                 fullDescription="Golden Instinct est un site complet développé avec PHP et stylisé avec TailwindCSS. J'ai principalement géré le back-end et la base de données du site web de Golden Instinct, une entreprise multiservices. En utilisant PHP pour la logique serveur et MongoDB pour la gestion des données, j'ai développé une architecture robuste et optimisée. Mon travail a inclus la mise en place d'une API sécurisée, la gestion des utilisateurs et des transactions, ainsi que l'optimisation des requêtes pour assurer des performances élevées. Ce projet m'a permis de renforcer mes compétences en développement back-end, gestion de bases de données NoSQL et sécurisation des applications web."
                 githubUrl="https://github.com/audreyfrebi/golden-instinct"
