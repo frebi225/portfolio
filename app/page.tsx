@@ -373,7 +373,7 @@ export default function Home() {
               <ProjectCard
                 title="Orivie 🏥"
                 description="Application mobile e-santé pour l'accès sécurisé au dossier médical numérique en Côte d'Ivoire."
-                image="/orivie.png?height=200&width=300"
+                image="/orivie.png?height=100&width=200"
                 tags={["Mobile", "E-santé", "CMU", "IA", "Géolocalisation"]}
                 fullDescription="Orivie est une application mobile e-santé révolutionnaire destinée aux patients ivoiriens, permettant un accès sécurisé et centralisé au dossier médical numérique partout en Côte d'Ivoire, même en zone rurale. Elle facilite la prise en charge médicale, améliore la gestion des urgences et offre un suivi continu de la santé grâce à l'intégration du numéro CMU (13 chiffres) comme identifiant unique. L'application propose des fonctionnalités avancées comme l'inscription via numéro CMU, la connexion sécurisée par QR Code, un tableau de bord patient complet, la localisation des centres de santé acceptant la CMU, la Météo Santé avec alertes sanitaires locales, un chatbot IA santé (texte et vocal), et une visualisation cartographique des soins disponibles. Le projet intègre les données publiques ivoiriennes (data.gouv.ci, INS, Ministère de la Santé) et propose un modèle économique freemium pour les patients avec des abonnements professionnels pour les centres de santé."
                 githubUrl="https://github.com/audreyfrebi/orivie"
