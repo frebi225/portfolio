@@ -152,7 +152,7 @@ export default function Home() {
                     <GraduationCap className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-blue-900">Programme Digifemmes Développeuse Full-stack</h4>
+                    <h4 className="font-semibold text-blue-900">Digifemmes — Développeuse Full-stack</h4>
                     <p className="text-gray-700">Formation intensive en développement web et mobile</p>
                   </div>
                 </li>
@@ -164,6 +164,17 @@ export default function Home() {
                     <h4 className="font-semibold text-blue-900">We.Code — Formation Sécurité Numérique</h4>
                     <p className="text-gray-700">
                       Réseaux, bonnes pratiques, sécurisation sous Linux avec Wireshark et pare-feux
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white mr-4 mt-1">
+                    <Briefcase className="h-4 w-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-blue-900">Coursera — Google Cybersecurity Professional Certificate</h4>
+                    <p className="text-gray-700">
+                    Gestion des risques, des menaces et des vulnérabilités, la sécurité des réseaux (IDS, SIEM), ainsi que l'automatisation avec Linux, SQL et Python, validé à travers 8 modules pratiques pour les métiers débutants en cybersécurité.
                     </p>
                   </div>
                 </li>
@@ -186,8 +197,8 @@ export default function Home() {
                     <Briefcase className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-blue-900">Formation en gestion de projet et montage vidéo</h4>
-                    <p className="text-gray-700">Simplon / Ministère de la Jeunesse</p>
+                    <h4 className="font-semibold text-blue-900">Simplon — Ministère de la Jeunesse</h4>
+                    <p className="text-gray-700">Formation en gestion de projet et montage vidéo</p>
                   </div>
                 </li>
                 <li className="flex items-start">
@@ -195,8 +206,8 @@ export default function Home() {
                     <Database className="h-4 w-4" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-blue-900">Initiation à l'analyse de données</h4>
-                    <p className="text-gray-700">Cisco Networking Academy</p>
+                    <h4 className="font-semibold text-blue-900">Cisco Networking Academy</h4>
+                    <p className="text-gray-700">Initiation à l'analyse de données</p>
                   </div>
                 </li>
               </ul>
