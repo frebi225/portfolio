@@ -180,6 +180,8 @@ export default function Home() {
                       innovantes
                     </p>
                   </div>
+                  </li>
+                  <li className="flex items-start">
                   <div>
                     <h4 className="font-semibold text-blue-900">Formation en gestion de projet et montage vidéo</h4>
                     <p className="text-gray-700">Simplon / Ministère de la Jeunesse</p>
@@ -191,7 +193,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-blue-900">Initiation à l'analyse de données</h4>
-                    <p className="text-gray-700">CISCO</p>
+                    <p className="text-gray-700">Cisco Networking Academy</p>
                   </div>
                 </li>
               </ul>
